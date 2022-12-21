@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Com patible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+      
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    
+    <!-- slick carousel css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CUSTOM STYLING -->
+    <link rel="stylesheet" href="assets/css/admin_style.css">
+    <link rel="stylesheet" href="assets/css/public.css">
+    <title>TBLOG</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="nav-overlay"></div>
+
+         <span role="button" class="menu-icon">
+            <ion-icon name="menu-outline"></ion-icon>
+        </span>
+        <a href="#" class="logo-wrapper td-none"><span>T</span>BLOG</a>
+        <nav>
+            <div class="search-item">
+                <span class="search-icon" role="button">
+                <ion-icon name="search-outline"></ion-icon>
+                </span>
+                <form action="index.html" method="post" class="header-search-form hide">
+                    <input type="text" name="search-term" placeholder="Search This Website..." 
+                        class="input-control input-control-sm search-input">
+                </form>
+            </div>
+            <ul class="navmenu">
+                <li class="navitem"><a href="#">All Posts</a></li>
+                <li class="navitem"><a href="#">Life Lessons</a></li>
+                <li class="navitem"><a href="#">Journals</a></li>
+                <li class="navitem">
+                    <a href="#">Best Articles <ion-icon name="chevron-down-outline" class="navicon"></ion-icon></a>
+                    <ul class="dropdown">
+                        <li><a href="#">Best of 2022</a></li>
+                        <li><a href="#">Best of 2021</a></li>
+                        <li><a href="#">Best of 2020</a></li>
+                        <li><a href="#">Best of 2019</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="navitem"><a href="#">Register</a></li>
+                <li class="navitem"><a href="#">Login</a></li> -->
+                <li class="navitem">
+                    <a href="#">
+                        <ion-icon name="person-circle-outline" class="navicon"></ion-icon> 
+                        Thales Solomon 
+                        <ion-icon name="chevron-down-outline" class="navicon"></ion-icon>
+                    </a>
+                        <ul class="dropdown">
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Page Container -->
+    <div class="default-page-container">
+        <article class="post-card flat-card featured-post">
+            <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/image.png);"></div>
+            <div class="post-info">
+                <div class="topic-wrapper">
+                    <a href="#" class="td-none topic-tag">Life Lessons</a>
+                    <span class="gray-1">5 min</span>
+                </div>
+                <div>
+                    <h3 class="post-title">
+                        <a href="#" class="td-none">
+                            One day we will be happy and free
+                        </a>
+                    </h3>
+                    
+                </div>
+                <div class="post-preview">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                        libero praesentium atque illo quibusdam  
+                    </p>
+                </div>
+                <div class="author-info">
+                    <div class="author">
+                        <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                        <a href="#" class="gray-1 link">Thales Solomon</a>
+                    </div>
+                    <a href="#" class="link">
+                        Read More
+                        <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </article>
+        
+        <section class="page-section carousel-container">
+            <div class="carousel-header">
+                <h2>Best of 2022</h2>
+                <a href="#">See All</a>
+            </div>
+            
+            <button  class="slider-arrow next-arrow">
+                <ion-icon class="icon" name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+            <button class="slider-arrow prev-arrow">
+                <ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon>
+            </button>
+            <div class="post-slider">
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/school.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/codding.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/learn.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/kid.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="page-section carousel-container">
+            <div class="carousel-header">
+                <h2>Best of 2021</h2>
+                <a href="#">See All</a>
+            </div>
+            
+            <button  class="slider-arrow next-arrow">
+                <ion-icon class="icon" name="arrow-forward-circle-outline"></ion-icon>
+            </button>
+            <button class="slider-arrow prev-arrow">
+                <ion-icon class="icon" name="arrow-back-circle-outline"></ion-icon>
+            </button>
+            <div class="post-slider">
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/learn.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/africa.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/students.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <article class="post-card">
+                    <div class="image-wrapper bg-image" style="background-image: url(assets/images/featured_images/play.jpg);"></div>
+                    <div class="post-info">
+                        <div class="topic-wrapper">
+                            <a href="#" class="td-none topic-tag">Life Lessons</a>
+                            <span class="gray-1">5 min</span>
+                        </div>
+                        <div>
+                            <h3 class="post-title">
+                                <a href="#" class="td-none">
+                                    One day we will be happy and free
+                                </a>
+                            </h3>
+                            
+                        </div>
+                        <div class="post-preview">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam repellendus, 
+                                libero praesentium atque illo quibusdam  
+                            </p>
+                        </div>
+                        <div class="author-info">
+                            <div class="author">
+                                <img src="assets/images/avatar/sule.png" class="avatar" alt="">
+                                <a href="#" class="gray-1 link">Thales Solomon</a>
+                            </div>
+                            <a href="#" class="link">
+                                Read More
+                                <ion-icon name="arrow-forward-outline" class="readmore-icon"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="page-section topics-container center">
+            <h2>Explore articles in various topics</h2>
+            <p>Our articles are organized into topics</p>
+            <div class="topics-pills">
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                <a href="#">Journaling</a>
+                
+            </div>
+
+        </section>
+        <!-- //Topics Section -->
+
+
+    </div>
+    <!-- // Page Container -->
+
+    <!-- Page Footer -->
+    <footer class="page-footer">
+        <div class="footer-content">
+            <div class="content-section company-info">
+                <h3 class="section-title">About Us</h3>
+                <div class="company-bio">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur itaque, 
+                    voluptas quia, quae eveniet corporis reiciendis 
+                    dolorem repellat unde quidem voluptate doloribus sint porro 
+                    molestiae fugiat aspernatur. Vitae, sint natus.
+                </div>
+                <div class="social-links">
+                    <a href="#"><ion-icon class="social-icon" name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-icon" name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-icon" name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-icon" name="logo-youtube"></ion-icon></a>
+                    <a href="#"><ion-icon class="social-icon" name="logo-linkedin"></ion-icon></a>
+                </div>
+            </div>
+            <div class="content-section helpful-links">
+                <div>
+                    <h3 class="section-title">Helpful Links</h3>
+                    <ul>
+                        <li><a class="link" href="#">Careers</a></li>
+                        <li><a class="link" href="#">Write for us</a></li>
+                        <li><a class="link" href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-section contact-wrapper">
+                <h3 class="section-title">Send us a Message</h3>
+                <form action="#" method="post" class="contact-form">
+                    <div class="input-group">
+                        <input type="email" name="email" id="email" placeholder="Your Email Address..." class="input-control contact">
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" class="input-control contact" id="message" cols="30" rows="4" placeholder="Your Message..."></textarea>
+                    </div>
+                    <div class="input-group">
+                        <button type="submit" name="send-message" class="btn btn-big primary-btn">Send</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="copyright-info">
+            <p class="center">Copyright &copy; 2022 Thalestech.com</p>
+        </div>
+        
+    </footer>
+    <!--// Page Footer -->
+
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- slick carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- IONIC ICONS  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script>
+
+        //Toggle search input
+
+        const mobileBreakpoint = 765;
+
+        const searchIcon = document.querySelector('.search-icon');
+        const headerSearchForm = document.querySelector('.header-search-form');
+        const searchInput = document.querySelector('.search-input');
+        const logoWrapper = document.querySelector('.logo-wrapper');
+
+        function toggleSearchBar() {
+            searchIcon.classList.toggle('hide');
+            headerSearchForm.classList.toggle('hide');
+            searchInput.focus();
+            if (window.innerWidth <= mobileBreakpoint) {
+                logoWrapper.classList.toggle('hide');
+            }
+        }
+
+        searchIcon.addEventListener('click', toggleSearchBar);
+        searchInput.addEventListener('blur', toggleSearchBar);
+
+        // navbar responsiveness
+        const menuIcon = document.querySelector('.menu-icon');
+        const navOverlay = document.querySelector('.nav-overlay');
+        const navMenu = document.querySelector('.navmenu');
+        const dropDowns = document.querySelectorAll('.navitem .dropdown');
+
+        menuIcon.addEventListener('click', function() {
+            navOverlay.classList.toggle('open');
+            navMenu.classList.toggle('open');
+
+        });
+
+        navOverlay.addEventListener('click', function() {
+            navOverlay.classList.remove('open');
+            navMenu.classList.remove('open');
+        });
+
+        dropDowns.forEach(dropdown => {
+            const navItem = dropdown.closest('.navitem');
+            navItem.addEventListener('click', function() {
+                navItem.classList.toggle('active');
+                
+            });
+
+        });
+
+
+        // slick carousel
+        $('.post-slider').each(function(index, slider) {
+            $(slider).slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: false,
+                infinite: false,
+                autoplaySpeed: 2000,
+                nextArrow: $(slider).siblings(' .next-arrow'),
+                prevArrow: $(slider).siblings(' .prev-arrow'),
+                responsive: [
+                    {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                    },
+                    {
+                    breakpoint: 550,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                    },
+                    
+                    // You can unslick at a given breakpoint now by adding:
+                    // settings: "unslick"
+                    // instead of a settings object
+                ]
+            });
+
+        });
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+
+<html class="loading" lang="en" data-textdirection="ltr">
+    <head>
+    <style type="text/css">
+     #loading {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      position: fixed;
+      display: block;
+      opacity: 0.7;
+      background-color: #fff;
+      z-index: 99;
+      text-align: center;
+    }
+    
+    #loading-image {
+      position: absolute;
+      top: 100px;
+      left: 240px;
+      z-index: 100;
+    }
+    
+    </style>
+    
+    <script>
+    function  includeHTML() {
+      var z, i, elmnt, file, xhttp;
+    
+      var links =window.location.href.split('#');
+     
+      var dpage="";
+      if(links.length>1 && links[1]!="")
+      {
+    
+        links[1]=links[1].split('?')[0];
+          dpage="pages/"+links[1]+".html";
+      }
+      else
+      {
+          
+      dpage="pages/home.html";
+      }
+      
+    
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("div");
+      
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+      //  console.log( elmnt);
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("include-part");
+    
+        if (file=="page") {
+            file =dpage;
+        }
+        
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+                
+              if (this.status == 200) {elmnt.insertAdjacentHTML('beforebegin',this.responseText);}
+              if (this.status == 404) {elmnt.insertAdjacentHTML('beforebegin','<div include-part="sections/404.html">');}
+            
+              /* Remove the attribute, and call this function once more: */
+              elmnt.remove("include-part");
+             
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, false);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    window.onhashchange = function() { 
+      console.log('location changed!');
+      var links =window.location.href.split('#');
+    
+     if(links.length>1 && links[1]!="")
+      {
+        links[1]=links[1].split('?')[0];
+        var clink=links[1].split('?')[0];
+      var x = document.getElementsByTagName("BODY")[0];
+      x.innerHTML='<div include-part="sections/script-head.html"></div><div include-part="sections/company-head.html"></div><div include-part="sections/company-menu.html"></div><div include-part="page"></div><div include-part="sections/footer.html"></div>';
+        includeHTML();
+         var x = document.getElementsByTagName("BODY")[0];
+        ////
+        var scs= document.getElementsByName("script-x2");
+        while(scs.length>0)
+        {
+           scs= document.getElementsByName("script-x2");
+           loadjscssfile(scs[0].value,"js");
+           scs[0].remove();
+          
+        }
+        loadjscssfile("pagescripts/"+clink+".js","js");
+        loadjscssfile("pagescripts/lastscript.js","js");
+        
+      
+      }
+    
+     $('.navigation-main li.has-sub > a').on('click',function(e){
+      console.log("here");
+            e.preventDefault();
+    
+              var $listItem=$(this).parents('li');
+    
+               console.log($listItem);
+              if($listItem.hasClass('open'))
+              {
+               $listItem.removeClass('open');
+              }
+              else
+              {
+    
+              $listItem.addClass('open');
+    
+              }
+          
+    
+    
+    
+    
+    
+          });
+    
+     
+        
+     document.getElementById("profile_name").innerHTML=window.localStorage["usersname"];
+    document.getElementById("proavatar").src='https://api.carrotsuite.co/'+window.localStorage["useravatar"];
+      
+       
+       
+    }
+    
+    
+    
+    </script>
+    
+    
+    </head>
+    
+    <body class="vertical-layout vertical-menu-modern material-vertical-layout material-layout 2-columns  menu-expanded fixed-navbar" data-open="click" data-menu="vertical-menu-modern" data-col="2-columns">
+    <div include-part="sections/script-head.html"></div>
+    <div include-part="sections/company-head.html"></div>
+    <div include-part="sections/company-menu.html"></div>
+    <div include-part="page"></div>
+    <div include-part="sections/footer.html"></div>
+    
+    
+    
+    
+     <script>
+    includeHTML();
+    
+    </script >
+        <script src="app-assets/vendors/js/vendors.min.js" ></script>
+      
+        
+        <!-- BEGIN Vendor JS-->
+    
+       
+       
+    
+     
+    
+    
+        <!-- END: Theme JS-->
+    
+        <!-- BEGIN: Page JS-->
+         <script  src="app-assets/js/scripts/pages/material-app.js" ></script>
+    
+         
+          <script src="htmlhelper/ajaxsetup.js" ></script>
+          <script src="app-assets/vendors/js/forms/select/select2.full.min.js" ></script>
+          <script src="app-assets/zebradate/zebra_datepicker.min.js" ></script>
+    
+    
+           <script src="app-assets/vendors/js/tables/datatable/datatables.min.js" ></script>
+          <script src="app-assets/js/scripts/modal/components-modal.js"></script>
+    
+          <script src="htmlhelper/pagescript.js" ></script>
+          <script src="htmlhelper/jquery.form.min.js" ></script>
+          
+          <script type="text/javascript">
+            
+    
+       
+            
+    
+          </script>
+         
+       
+    
+    
+    
+    </body>
+    </html>
+    
